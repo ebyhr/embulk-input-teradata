@@ -14,6 +14,8 @@ import org.embulk.spi.InputPlugin;
 import org.embulk.spi.PageOutput;
 import org.embulk.spi.Schema;
 import org.embulk.spi.SchemaConfig;
+import java.sql.*;
+Class.forName("com.teradata.jdbc.TeraDriver");
 
 public class TeradataInputPlugin
         implements InputPlugin
