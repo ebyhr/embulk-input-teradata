@@ -6,7 +6,8 @@
 /classpath/
 build/
 .idea
-/.settings/
-/.metadata/
-.classpath
-.project
+*.csv
+.tags
+.ruby-version
+example2
+*.iml
