@@ -1,0 +1,13 @@
+in:
+  type: teradata
+  driver_class: com.teradata.jdbc.TeraDriver
+  host: 
+  user: YE186001
+  password: "RtMFzuGp"
+  database: dbc
+  query: select * from dbc.tables;
+out:
+  type: command
+  command: "cat - > task.$INDEX.$SEQID.csv"
+  formatter:
+    type: csv
