@@ -11,9 +11,9 @@ public class TeradataInputConnection
 {
     private final Logger logger = Exec.getLogger(TeradataInputConnection.class);
 
-    public TeradataInputConnection(Connection connection)
+    public TeradataInputConnection(Connection connection, String schemaName)
             throws SQLException
     {
-        super(connection, null);
+        super(connection, schemaName);
     }
 }
