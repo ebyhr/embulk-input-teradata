@@ -1,27 +1,32 @@
 # Teradata input plugin for Embulk
 
-TODO: Write short description here and build.gradle file.
+Connect teradata server with jdbc
 
 ## Overview
 
 * **Plugin type**: input
-* **Resume supported**: yes
-* **Cleanup supported**: yes
+* **Resume supported**: no
+* **Cleanup supported**: no
 * **Guess supported**: no
 
 ## Configuration
 
-- **option1**: description (integer, required)
-- **option2**: description (string, default: `"myvalue"`)
-- **option3**: description (string, default: `null`)
+- **host**: description (string, required)
+- **user**: description (string, required)
+- **password**: description (string, required)
+- **database**: description (string, required)
 
 ## Example
 
 ```yaml
 in:
   type: teradata
-  option1: example1
-  option2: example2
+  driver_class: com.teradata.jdbc.TeraDriver
+  host: 127.0.0.1
+  user: dbc
+  password: "dbc"
+  database: dbc
+  query: select * from dbc.tables;
 ```
 
 
